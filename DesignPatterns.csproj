@@ -56,6 +56,7 @@
     <Compile Include="FactoryMethod\Creator.cs" />
     <Compile Include="FactoryMethod\IProduct.cs" />
     <Compile Include="FactoryMethod\Products.cs" />
+    <Compile Include="Lazy\LazyObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

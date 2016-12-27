@@ -2,6 +2,7 @@
 using DesignPatterns.AbstractFactory;
 using DesignPatterns.Builder;
 using DesignPatterns.FactoryMethod;
+using DesignPatterns.Lazy;
 
 namespace DesignPatterns
 {
@@ -25,6 +26,13 @@ namespace DesignPatterns
             Console.WriteLine(product.Description);
             product = creator.GetProduct(PRODUCT.TYPE2);
             Console.WriteLine(product.Description);
+
+            LazyObject.Get("first");
+            LazyObject.Get("second");
+            LazyObject.ShowAll();
+            LazyObject.Get("third");
+            LazyObject.Get("first");
+            LazyObject.ShowAll();
 
             Console.ReadKey();
         }

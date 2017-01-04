@@ -53,6 +53,8 @@
     <Compile Include="Builder\Manufacture.cs" />
     <Compile Include="Builder\Parts.cs" />
     <Compile Include="Builder\Product.cs" />
+    <Compile Include="DynamicVisitor\DynamicVisitor.cs" />
+    <Compile Include="DynamicVisitor\Person.cs" />
     <Compile Include="FactoryMethod\Creator.cs" />
     <Compile Include="FactoryMethod\IProduct.cs" />
     <Compile Include="FactoryMethod\Products.cs" />

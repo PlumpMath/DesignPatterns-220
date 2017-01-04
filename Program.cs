@@ -3,6 +3,7 @@ using DesignPatterns.AbstractFactory;
 using DesignPatterns.Builder;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.Lazy;
+using DesignPatterns.DynamicVisitor;
 
 namespace DesignPatterns
 {
@@ -33,6 +34,12 @@ namespace DesignPatterns
             LazyObject.Get("third");
             LazyObject.Get("first");
             LazyObject.ShowAll();
+
+            Person personClient = new Client() { FirstName = "Ivan", SecondName = "Ivanov", OrdersCount = 5 };
+            Person personEmployee = new Employee() { FirstName = "Petr", SecondName = "Petrov", Salary = 1000 };
+            ToStringVisitor visitor = new ToStringVisitor();
+            Console.WriteLine(visitor.DynamicVisit(personClient));
+            Console.WriteLine(visitor.DynamicVisit(personEmployee));
 
             Console.ReadKey();
         }

@@ -41,7 +41,9 @@ namespace DesignPatterns
             Console.WriteLine(visitor.DynamicVisit(personClient));
             Console.WriteLine(visitor.DynamicVisit(personEmployee));
 
+            Console.WriteLine("Complete");
             Console.ReadKey();
+            
         }
     }
 }
